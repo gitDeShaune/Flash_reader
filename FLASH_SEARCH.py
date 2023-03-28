@@ -15,6 +15,7 @@ chrome_options = Options()
 #chrome_options.add_argument("--headless")
 chrome_options.add_argument('--ignore-certificate-errors')
 #-----
+server = app.server
 
 #import pandas as pd
 
