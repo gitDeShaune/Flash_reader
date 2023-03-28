@@ -15,6 +15,7 @@ chrome_options = Options()
 #chrome_options.add_argument("--headless")
 chrome_options.add_argument('--ignore-certificate-errors')
 #-----
+app = Dash(__name__)
 server = app.server
 
 #import pandas as pd
@@ -30,6 +31,8 @@ from datetime import datetime, timedelta
 
 import time
 from time import sleep
+
+
 def formatDate4XL(str2):
     return (str2[2:4] +'.'+str2[0:2] + '.20'+str2[4:])    
 #end of def2    
